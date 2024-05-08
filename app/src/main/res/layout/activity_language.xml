@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.screen.LanguageActivity">
+
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/txt_choose_language"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            app:fontFamily="@font/poppins_semibold"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_done"
+            android:layout_alignParentEnd="true"
+            app:contentPadding="@dimen/_15sdp"
+            android:layout_centerVertical="true"/>
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ad_170"/>
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:id="@+id/ad_170"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_alignParentBottom="true"/>
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

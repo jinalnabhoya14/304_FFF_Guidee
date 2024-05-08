@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FFFFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorAccent">#0085FF</color>
+    <color name="colorAccentLight">#BAD5FB</color>
+    <color name="textColor">#004380</color>
+    <color name="pink">#FF427B</color>
+    <color name="orange">#FF6442</color>
+    <color name="gnt_colorPrimary">#FFFFFF</color>
+
+    <style name="gnt_CustomBottomSheetDialogTheme" parent="@style/Theme.MaterialComponents.DayNight.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowSoftInputMode">adjustNothing</item>
+        <item name="bottomSheetStyle">@style/gnt_CustomBottomSheetStyle</item>
+    </style>
+    <style name="gnt_CustomBottomSheetStyle" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

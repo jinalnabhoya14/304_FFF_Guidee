@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_ad_banner_1"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="AD"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_ad_text"/>
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

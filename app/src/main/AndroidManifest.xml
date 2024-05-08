@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DailyDiamond"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.activity.AfterCallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.screen.PrivacyScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.screen.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.EndActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.RankActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.LevelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.GamesModeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.DiamondCountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.DiamondCalcActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.IDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.DiamondInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.DiamondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.EmotesInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.ParachuteInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.ParachuteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.VehicleInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.WeaponInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.BundlesInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.PetsInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.CharacterInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.EmotesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.VehicleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.WeaponsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.BundlesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.PetsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.CharactersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.screen.IntroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.screen.StartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.screen.LanguageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.screen.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".receiver.MyReceiver"
+            android:exported="true"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.screen.SplashActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ic_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_welcome"
+        android:src="@drawable/ic_splash"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_title"
+        android:text="Welcome to"
+        android:textSize="@dimen/_17sdp"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/_40sdp"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_splash"
+        android:text="@string/app_name"
+        android:textSize="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_ad_splash"
+        android:text="@string/txt_splash_"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_40sdp"
+        android:gravity="center"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_ad_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressbar"
+        android:text="@string/txt_splash_ad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:textColor="@color/black"/>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="true"
+        android:layout_above="@+id/textview"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:indeterminateTint="@color/colorAccent"/>
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>
